@@ -1,0 +1,13 @@
+body{
+    background-color: #181818;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    color: white;
+}
+
+#walletInfo{
+    border-right: solid white !important;
+    width: 25vw;
+    height: 100%;
+}
