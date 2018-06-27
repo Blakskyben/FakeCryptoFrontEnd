@@ -1,13 +1,36 @@
 body{
-    background-color: #181818;
+    background-color: #242526;
 }
 
 h1, h2, h3, h4, h5, h6, p{
     color: white;
 }
 
+.hr25{
+    height: 1px;
+    width:25vw;
+    margin: -5px !important;
+    background-color: white;
+}
+
 #walletInfo{
-    border-right: solid white !important;
+    border-right: 2px solid white !important;
     width: 25vw;
-    height: 100%;
+    height: 50%;
+    margin: 0 !important;
+}
+
+#walletInfo *{
+    text-align: center;
+}
+
+#recentOrders{
+    width: 25vw;
+    border-right: 2px solid white !important;
+    height: 50.75%;
+    margin: 0 !important;
+}
+
+#recentOrders *{
+    text-align: center;
 }
