@@ -3,8 +3,17 @@ body{
     margin: 0;
 }
 
+
+
 #topRow h1{
-    margin: 5px;
+    margin: 10px;
+    font-family: 'Raleway', sans-serif;
+    /* font-weight: normal; */
+}
+
+#toprow a{
+    color: white;
+    text-decoration: none;
 }
 
 *{
@@ -16,20 +25,31 @@ body{
     border-right: 1px solid white !important;
 }
 
+#col1 *{
+    font-family: 'Open Sans', sans-serif;
+}
+
+#col1 h2{
+    font-weight: bolder !important;
+}
+
+#col1 h3,h4,h5,h6{
+    font-weight: normal !important;
+}
+
 h1, h2, h3, h4, h5, h6, p{
     color: white;
 }
 
 .hr25{
-    height: 4px;
+    height: .5px !important;
     width:25vw;
-    margin: -5px !important;
     background-color: white;
 }
 
 #walletInfo{
     width: 25vw;
-    height: 50%;
+    height: 35%;
     margin: 0 !important;
 }
 
@@ -40,6 +60,7 @@ h1, h2, h3, h4, h5, h6, p{
 #walletInfo h2{
     padding-top: 20px;
     margin: 0 !important;
+    padding-bottom: 10px;
 }
 
 #placeOrders{
@@ -54,7 +75,7 @@ h1, h2, h3, h4, h5, h6, p{
 
 #sellForm input{
     height: 50px;
-    width: 12.5vw;
+    width: 17vw;
     display: block !important;
     margin: 0 auto;
     margin-top: 7.5px;
@@ -82,7 +103,7 @@ h1, h2, h3, h4, h5, h6, p{
 
 #buyForm input{
     height: 50px;
-    width: 12.5vw;
+    width: 17vw;
     display: block !important;
     margin: 0 auto;
     margin-top: 7.5px;
@@ -99,6 +120,14 @@ h1, h2, h3, h4, h5, h6, p{
     width: 25vw; 
     display: flex;
     justify-content: center;
+}
+
+.inline{
+    display: inline !important;
+}
+
+.walletBal{
+    width: 25vw;
 }
 
 @media only screen and (max-width: 710px){
