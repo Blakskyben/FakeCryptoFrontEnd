@@ -3,6 +3,14 @@ body{
     margin: 0;
 }
 
+#topRow h1{
+    margin: 5px;
+}
+
+*{
+    overflow-x: hidden;
+}
+
 #col1{
     width: 25vw;
     border-right: 1px solid white !important;
@@ -13,7 +21,7 @@ h1, h2, h3, h4, h5, h6, p{
 }
 
 .hr25{
-    height: 0.5px;
+    height: 4px;
     width:25vw;
     margin: -5px !important;
     background-color: white;
@@ -32,6 +40,7 @@ h1, h2, h3, h4, h5, h6, p{
 
 #walletInfo h2{
     padding-top: 20px;
+    margin: 0 !important;
 }
 
 #placeOrders{
@@ -66,6 +75,13 @@ h1, h2, h3, h4, h5, h6, p{
     justify-content: center;
 }
 
+.wideHR{
+    background-color: white;
+    height: 0.5px;
+    margin: 0;
+    width: 100vw;
+}
+
 #buyForm input{
     height: 50px;
     width: 12.5vw;
@@ -86,3 +102,14 @@ h1, h2, h3, h4, h5, h6, p{
     display: flex;
     justify-content: center;
 }
+
+@media only screen and (max-width: 710px){
+    #col1{
+        width: 100% !important;
+    }
+    #col1 *{
+        width: 100% !important;
+    }
+}
+
+/* 710px-width needs optimization */
