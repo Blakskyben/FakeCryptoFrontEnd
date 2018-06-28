@@ -1,5 +1,11 @@
 body{
-    background-color: #242526;
+    background-color: #060019;
+    margin: 0;
+}
+
+#col1{
+    width: 25vw;
+    border-right: 1px solid white !important;
 }
 
 h1, h2, h3, h4, h5, h6, p{
@@ -7,14 +13,14 @@ h1, h2, h3, h4, h5, h6, p{
 }
 
 .hr25{
-    height: 1px;
+    height: 0.5px;
     width:25vw;
     margin: -5px !important;
     background-color: white;
 }
 
 #walletInfo{
-    border-right: 2px solid white !important;
+    /* border-right: 1px solid white !important; */
     width: 25vw;
     height: 50%;
     margin: 0 !important;
@@ -24,13 +30,59 @@ h1, h2, h3, h4, h5, h6, p{
     text-align: center;
 }
 
-#recentOrders{
+#walletInfo h2{
+    padding-top: 20px;
+}
+
+#placeOrders{
     width: 25vw;
-    border-right: 2px solid white !important;
-    height: 50.75%;
+    /* border-right: 1px solid white !important; */
+    height: 100%;
     margin: 0 !important;
 }
 
-#recentOrders *{
+#placeOrders *{
     text-align: center;
+}
+
+#sellForm input{
+    height: 50px;
+    width: 12.5vw;
+    display: block !important;
+    margin: 0 auto;
+    margin-top: 7.5px;
+    font-size: 15px;
+    border: none;
+    color: white; 
+}
+
+#sellForm input[type="submit"]{
+    background-color: orangered;
+}
+
+#buyForm{
+    width: 25vw; 
+    display: flex;
+    justify-content: center;
+}
+
+#buyForm input{
+    height: 50px;
+    width: 12.5vw;
+    display: block !important;
+    margin: 0 auto;
+    margin-top: 7.5px;
+    font-size: 15px;
+    border: none;
+    color: white; 
+}
+
+#buyForm input[type="submit"]{
+    background-color: green;
+}
+
+#buyForm{
+    width: 25vw; 
+    display: flex;
+    justify-content: center;
 }

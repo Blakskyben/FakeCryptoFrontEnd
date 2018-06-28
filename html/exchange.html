@@ -2,15 +2,32 @@
     <head>
         <link rel="stylesheet" type="text/css" href="../style.css">
         <script src="../main.js"></script>
+        <title>Pro Exchange</title>
     </head>
     <body>
-        <div id="walletInfo">
-            <h1>Wallet</h1>
-            <h2>[ETH Bal.] [BTC Bal.] [LTC Bal.]</h2>
-        </div>
-        <div id="recentOrders">
-            <hr class="hr25">
-            <h1>Recent Orders</h1>
+        <div id="col1">
+            <div id="walletInfo">
+                <h2>Wallet</h2>
+                <h4>[ETH Bal.] [BTC Bal.] [LTC Bal.]</h4>
+            </div>
+            <div id="placeOrders">
+                <hr class="hr25">
+                <h2>Buy</h2>
+                <h3>Place Orders</h1>
+                <div id="sellForm">
+                    <form id="sell" action="POST">
+                        <input placeholder="Amount" type="text">
+                        <input value="Place Order" type="submit">
+                    </form>
+                </div>
+                <h2>Sell</h2>
+                <div id="buyForm">
+                    <form id="buy" action="POST">
+                        <input placeholder="Amount" type="text">
+                        <input value="Place Order" type="submit">
+                    </form>
+                </div>
+            </div>
         </div>
     </body>
 </html>
