@@ -1,9 +1,14 @@
+html{
+    height: 100%;
+}
+
 body{
     background-color: #060019;
     margin: 0;
+    height: 100%;
 }
 
-
+/* Column 1 */
 
 #topRow h1{
     margin: 10px;
@@ -23,6 +28,15 @@ body{
 #col1{
     width: 25vw;
     border-right: 1px solid white !important;
+    margin-right: 0 !important;
+    display: inline-block;
+    height: 100vh;
+    overflow-y: hidden !important;
+}
+
+#col1 hr{
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 #col1 *{
@@ -51,10 +65,12 @@ h1, h2, h3, h4, h5, h6, p{
     width: 25vw;
     height: 35%;
     margin: 0 !important;
+    overflow-y: hidden;
 }
 
 #walletInfo *{
     text-align: center;
+    overflow-y: hidden;
 }
 
 #walletInfo h2{
@@ -128,6 +144,16 @@ h1, h2, h3, h4, h5, h6, p{
 
 .walletBal{
     width: 25vw;
+}
+
+/* Column 2 */
+
+#col2{
+    height: 100vh;
+    width: 35vw;
+    border-right: 1px solid white !important;
+    margin: 0 !important;
+    display: inline-block;
 }
 
 @media only screen and (max-width: 710px){
