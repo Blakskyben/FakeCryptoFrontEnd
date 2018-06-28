@@ -110,6 +110,9 @@ h1, h2, h3, h4, h5, h6, p{
     #col1 *{
         width: 100% !important;
     }
+    #col1 input{
+        width: 90% !important;
+    }
 }
 
 /* 710px-width needs optimization */
