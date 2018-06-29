@@ -213,6 +213,24 @@ h1, h2, h3, h4, h5, h6, p{
     font-family: 'Open Sans', sans-serif;
 }
 
+#depthChart{
+    display: none;
+}
+
+#priceChart{
+    display: block; 
+}
+
+#col3 a{
+    color: white;
+    text-decoration: underline;
+
+}
+
+#col3 a:hover{
+    cursor: pointer;
+}
+
 @media only screen and (max-width: 710px){
     #col1{
         width: 100% !important;
