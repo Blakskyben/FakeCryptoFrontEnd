@@ -166,6 +166,10 @@ h1, h2, h3, h4, h5, h6, p{
     display: inline-block;
 }
 
+#recentOrders{
+    text-align: center;
+}
+
 #recentOrders h2{
     font-family: 'Open Sans', sans-serif;
     text-align: left;
@@ -174,6 +178,39 @@ h1, h2, h3, h4, h5, h6, p{
     margin: 0 !important;
     margin-left: 10px !important;
     font-size: 22.5px !important;
+}
+
+#recentOrders a{
+    display: inline;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: underline;
+}
+
+#recentOrders a:hover{
+    cursor: pointer;
+}
+
+#orderHistory{
+    display: block;
+}
+
+#tradeHistory{
+    display: none;
+}
+
+/* Column 3 */
+
+#col3{
+    display: inline-block;
+    width: 58.4vw;
+    height: 100vh;
+    margin: 0 !important;
+    /* border-right: 1px solid white !important; */
+}
+
+#col3 *{
+    font-family: 'Open Sans', sans-serif;
 }
 
 @media only screen and (max-width: 710px){
@@ -191,6 +228,12 @@ h1, h2, h3, h4, h5, h6, p{
         width: 100% !important;
     }
     #col2 *{
+        width: 100% !important;
+    }
+    #col3{
+        width: 100% !important;
+    }
+    #col3 *{
         width: 100% !important;
     }
 }
