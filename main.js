@@ -9,8 +9,8 @@ const switch2 = ()=>{
 }
 
 const chart1 = ()=>{
+    document.querySelector("#depthChart").style.display = "none";
     document.querySelector("#priceChart").style.display = "block";
-    document.querySelector("#depthChart").style.diplay = "none";
     document.querySelector(".changeId1").setAttribute("id","graph");
     document.querySelector(".changeId2").setAttribute("id","none");
     Plotly.d3.csv('https://raw.githubusercontent.com/plotly/datasets/master/finance-charts-apple.csv', function(err, rows){
