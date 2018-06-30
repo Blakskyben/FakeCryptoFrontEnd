@@ -12,6 +12,10 @@ hr{
     background-color: white;
 }
 
+input{
+    font-family: 'Raleway', sans-serif;
+}
+
 /* Column 1 */
 
 #topRow h1{
@@ -246,6 +250,28 @@ h1, h2, h3, h4, h5, h6, p{
     height: 75vh;
 }
 
+/* Register */
+
+#registerParent, #loginParent{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+#register input, #login input{
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+    width: 25vw;
+    font-size: 26px;
+    border: none;
+}
+
+#register input[type="submit"], #login input[type="submit"]{
+    background-color: greenyellow;
+}
+
 @media only screen and (max-width: 710px){
     #col1{
         width: 100% !important;
@@ -269,5 +295,8 @@ h1, h2, h3, h4, h5, h6, p{
     }
     #col3 *{
         width: 100% !important;
+    }
+    input{
+        width: 90% !important;
     }
 }
