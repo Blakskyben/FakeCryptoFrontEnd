@@ -5,7 +5,7 @@ html{
 body{
     background-color: #060019;
     margin: 0;
-    height: 100%;
+    height: 150vh;
 }
 
 hr{
@@ -30,7 +30,7 @@ input{
 }
 
 *{
-    overflow-x: hidden;
+    overflow-x: hidden; 
 }
 
 #col1{
@@ -211,7 +211,7 @@ h1, h2, h3, h4, h5, h6, p{
 
 #col3{
     display: inline-block;
-    width: 58.4vw;
+    width: 57vw;
     height: 150vh;
     margin: 0 !important;
     /* border-right: 1px solid white !important; */
@@ -221,12 +221,17 @@ h1, h2, h3, h4, h5, h6, p{
     font-family: 'Open Sans', sans-serif;
 }
 
-#depthChart{
+#ethChart{
     display: none;
     margin-left: 5px;
 }
 
-#priceChart{
+#ltcChart{
+    display: none;
+    margin-left: 5px;
+}
+
+#btcChart{
     display: block;
     margin-left: 5px; 
 }
@@ -270,6 +275,10 @@ h1, h2, h3, h4, h5, h6, p{
 
 #register input[type="submit"], #login input[type="submit"]{
     background-color: greenyellow;
+}
+
+*{
+    overflow-y: visible !important;
 }
 
 @media only screen and (max-width: 710px){

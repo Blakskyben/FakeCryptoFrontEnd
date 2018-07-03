@@ -76,17 +76,103 @@
         </div>
         <div id="col3">
             <h2>Price of [crypto]: [price]</h2>
-            <a onclick="chart1()">Price Chart</a>
-            <a onclick="chart2()">Depth Chart</a>
+            <a onclick="chart1()">BTC Chart</a>
+            <a onclick="chart2()">ETH Chart</a>
+            <a onclick="chart3()">LTC Chart</a>
             <hr>
             <div id="charts">
-                <div id="priceChart">
-                    <h2>Price Chart</h2>
-                    <div class="changeId1" id="graph"></div>
+                <div id="btcChart">
+                    <h2>BTC Chart</h2>
+                    <div class="changeId1">
+                        <!-- TradingView Widget BEGIN -->
+                        <div class="tradingview-widget-container">
+                            <div id="tradingview_ad1e0"></div>
+                            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/BITFINEX-BTCUSD/" rel="noopener" target="_blank"><span class="blue-text">BTCUSD chart</span></a> by TradingView</div>
+                            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                            <script type="text/javascript">
+                            new TradingView.widget(
+                            {
+                            "autosize": true,
+                            "symbol": "BITFINEX:BTCUSD",
+                            "interval": "5",
+                            "timezone": "exchange",
+                            "theme": "Dark",
+                            "style": "1",
+                            "locale": "en",
+                            "toolbar_bg": "#f1f3f6",
+                            "enable_publishing": false,
+                            "hide_top_toolbar": true,
+                            "allow_symbol_change": true,
+                            "save_image": false,
+                            "container_id": "tradingview_ad1e0"
+                        }
+                            );
+                            </script>
+                        </div>
+                        <!-- TradingView Widget END -->
+                    </div>
                 </div>
-                <div id="depthChart">
-                    <h2>Depth Chart</h2>
-                    <div class="changeId2" id=""></div>
+                <div id="ethChart">
+                    <h2>ETH Chart</h2>
+                    <div class="changeId2">
+                        <!-- TradingView Widget BEGIN -->
+                        <div class="tradingview-widget-container">
+                                <div id="tradingview_4e106"></div>
+                                <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/BITTREX-ETHUSD/" rel="noopener" target="_blank"><span class="blue-text">ETHUSD chart</span></a> by TradingView</div>
+                                <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                                <script type="text/javascript">
+                                new TradingView.widget(
+                                {
+                                "autosize": true,
+                                "symbol": "BITTREX:ETHUSD",
+                                "interval": "5",
+                                "timezone": "exchange",
+                                "theme": "Dark",
+                                "style": "1",
+                                "locale": "en",
+                                "toolbar_bg": "#f1f3f6",
+                                "enable_publishing": false,
+                                "hide_top_toolbar": true,
+                                "allow_symbol_change": true,
+                                "save_image": false,
+                                "container_id": "tradingview_4e106"
+                            }
+                                );
+                                </script>
+                        </div>
+      <!-- TradingView Widget END -->
+                    </div>
+                </div>
+                <div id="ltcChart">
+                    <h2>LTC Chart</h2>
+                    <div class="changeId3">
+                        <!-- TradingView Widget BEGIN -->
+                        <div class="tradingview-widget-container">
+                                <div id="tradingview_a506c"></div>
+                                <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/BITSTAMP-LTCUSD/" rel="noopener" target="_blank"><span class="blue-text">LTCUSD chart</span></a> by TradingView</div>
+                                <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                                <script type="text/javascript">
+                                new TradingView.widget(
+                                {
+                                "autosize": true,
+                                "symbol": "BITSTAMP:LTCUSD",
+                                "interval": "5",
+                                "timezone": "exchange",
+                                "theme": "Dark",
+                                "style": "1",
+                                "locale": "en",
+                                "toolbar_bg": "#f1f3f6",
+                                "enable_publishing": false,
+                                "hide_top_toolbar": true,
+                                "allow_symbol_change": true,
+                                "save_image": false,
+                                "container_id": "tradingview_a506c"
+                            }
+                                );
+                                </script>
+                        </div>
+      <!-- TradingView Widget END -->
+                    </div>
                 </div>
             </div> 
             <hr>
