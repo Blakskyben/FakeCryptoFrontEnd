@@ -5,7 +5,7 @@ html{
 body{
     background-color: #060019;
     margin: 0;
-    height: 150vh;
+    width: 100vw;
 }
 
 hr{
@@ -29,17 +29,13 @@ input{
     text-decoration: none;
 }
 
-*{
-    overflow-x: hidden; 
-}
-
 #col1{
     width: 20%;
     border-right: 1px solid white !important;
     margin-right: 0 !important;
     display: inline-block;
-    height: 150vh;
-    overflow-y: hidden !important;
+    height: 200vh;
+    /* overflow-y: hidden !important; */
 }
 
 #col1 hr{
@@ -50,6 +46,7 @@ input{
 #col1 *{
     font-family: 'Open Sans', sans-serif;
     width: 20vw !important;
+    overflow-x: hidden;
 }
 
 #col1 h2{
@@ -64,6 +61,10 @@ input{
     width: 85% !important;
 }
 
+#placeOrders{
+    height: 40% !important;
+} 
+
 h1, h2, h3, h4, h5, h6, p{
     color: white;
 }
@@ -76,14 +77,14 @@ h1, h2, h3, h4, h5, h6, p{
 
 #walletInfo{
     width: 20vw;
-    height: 35%;
+    height: 25%;
     margin: 0 !important;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
 }
 
 #walletInfo *{
     text-align: center;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
 }
 
 #walletInfo h2{
@@ -167,7 +168,7 @@ h1, h2, h3, h4, h5, h6, p{
 /* Column 2 */
 
 #col2{
-    height: 150vh;
+    height: 200vh;
     width: 20vw;
     border-right: 1px solid white !important;
     margin: 0 !important;
@@ -210,30 +211,33 @@ h1, h2, h3, h4, h5, h6, p{
 /* Column 3 */
 
 #col3{
+    float: right;
     display: inline-block;
     width: 57vw;
-    height: 150vh;
     margin: 0 !important;
     /* border-right: 1px solid white !important; */
 }
 
 #col3 *{
     font-family: 'Open Sans', sans-serif;
+    width: 100%;
 }
 
 #ethChart{
     display: none;
-    margin-left: 5px;
+    /* margin-left: 5px; */
+    width: 98%;
 }
 
 #ltcChart{
     display: none;
-    margin-left: 5px;
+    /* margin-left: 5px; */
+    width: 98%;
 }
 
 #btcChart{
     display: block;
-    margin-left: 5px; 
+    width: 98%;
 }
 
 #col3 a{
@@ -277,13 +281,26 @@ h1, h2, h3, h4, h5, h6, p{
     background-color: greenyellow;
 }
 
-*{
-    overflow-y: visible !important;
+
+
+
+#col1, #col2, #col3{
+    display: inline-block;
+    /* height: 170% !important; */
+    vertical-align: top;
 }
 
-@media only screen and (max-width: 710px){
+*{
+    overflow-x: hidden !important;
+}
+
+@media only screen and (min-width: 50px) and (max-width: 900px){
+    *{
+        overflow-y: visible !important; 
+    }
     #col1{
         width: 100% !important;
+        height: auto !important;
     }
     #col1 *{
         width: 100% !important;
