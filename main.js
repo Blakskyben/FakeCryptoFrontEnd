@@ -37,3 +37,10 @@ const logOut = () => {
     localStorage.removeItem('email');
     localStorage.removeItem('password');
 };
+
+const checkLoggedIn = () => {
+    if (localStorage.getItem("infiniteScrollEnabled") === null) {
+        return false;
+    }
+    return true;
+};
