@@ -1,19 +1,37 @@
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="../style.css">
-        <link href="https://fonts.googleapis.com/css?family=Arvo|Raleway" rel="stylesheet">
-        <title>Register</title>
-    </head>
-    <body>
-        <div id="registerParent">
-            <form id="register" action="POST">
-                <input type="text" placeholder="Username">
-                <input type="text" placeholder="Email">
-                <input type="password" placeholder="Password">
-                <input type="password" placeholder="Confirm Password">
-                <input type="submit">
-            </form>
-        </div>
-    </body>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Raleway" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script scr="../main.js"></script>
+    <title>Register</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var $form = $('form');
+            $form.submit(function () {
+                $.post($(this).attr('action'), $(this).serialize(), function (response) {}, 'json');
+
+                window.location.href = 'exchange.html';
+                return false;
+            });
+        });
+    </script>
+
+    <div id="registerParent">
+        <form id="register" method="POST" action="http://108.6.212.149:8080/api/accounts/create">
+            <input name="username" type="text" placeholder="Username">
+            <input name="email" type="text" placeholder="Email">
+            <input name="password" type="password" placeholder="Password">
+            <input type="password" placeholder="Confirm Password">
+            <input type="submit">
+        </form>
+    </div>
+</body>
+
 </html>
