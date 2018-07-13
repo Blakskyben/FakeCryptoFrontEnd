@@ -5,6 +5,7 @@
         <link href="https://fonts.googleapis.com/css?family=Arvo|Raleway" rel="stylesheet">
         <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
         <script src="../main.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         <title>Pro Exchange</title>
     </head>
     <body>
@@ -34,6 +35,14 @@
             </div>
             <div id="placeOrders">
                 <h3>Place Orders</h3>
+                <button onclick="dropdown()">
+                    Choose Crypto
+                </button>
+                <div id="drop">
+                    <button onclick="dropdown()">BTC</button>
+                    <button onclick="dropdown()">ETH</button>
+                    <button onclick="dropdown()">LTC</button>
+                </div>
                 <h2>Buy</h2>
                 <div id="sellForm">
                     <form id="sell" action="POST">

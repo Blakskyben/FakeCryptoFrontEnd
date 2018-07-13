@@ -26,3 +26,6 @@ const chart3 = ()=>{
     document.querySelector("#btcChart").style.display = "none";
 }
 
+const dropdown = () => {
+    $("#drop").toggle();
+}

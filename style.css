@@ -1,3 +1,8 @@
+.text-center{
+    margin-top: 10px;
+    text-align: center; 
+}
+
 html{
     height: 100%;
 }
@@ -6,6 +11,14 @@ body{
     background-color: #060019;
     margin: 0;
     width: 100vw;
+}
+
+#drop{
+    display: none;
+}
+
+#drop button{
+    margin-top: 5px !important; 
 }
 
 hr{
@@ -63,6 +76,7 @@ input{
 
 #placeOrders{
     height: 40% !important;
+    overflow-y: hidden;
 } 
 
 h1, h2, h3, h4, h5, h6, p{
@@ -262,6 +276,11 @@ h1, h2, h3, h4, h5, h6, p{
 /* Register */
 
 #registerParent, #loginParent{
+    display: block !important;
+    height: 250px; 
+}
+
+#registerParent, #loginParent{
     height: 100%;
     display: flex;
     align-items: center;
@@ -281,7 +300,22 @@ h1, h2, h3, h4, h5, h6, p{
     background-color: greenyellow;
 }
 
+#placeOrders button{
+    display: block;
+    margin: 0 auto;
+    font-size: 28px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    width: 15.5vw !important;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 2.5px;
+}
 
+#placeOrders button:hover{
+    cursor: pointer;
+}
 
 
 #col1, #col2, #col3{
@@ -292,6 +326,17 @@ h1, h2, h3, h4, h5, h6, p{
 
 *{
     overflow-x: hidden !important;
+}
+
+.changeId1, .changeId2, .changeId3{
+    display: block;
+    text-align: left !important;
+} 
+
+*:active, *:focus {
+    outline: 0;
+    border: none;
+    -moz-outline-style: none;
 }
 
 @media only screen and (min-width: 50px) and (max-width: 900px){
