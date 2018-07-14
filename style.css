@@ -303,7 +303,7 @@ h1, h2, h3, h4, h5, h6, p{
 #placeOrders button{
     display: block;
     margin: 0 auto;
-    font-size: 28px;
+    font-size: 20px;
     padding-top: 7px;
     padding-bottom: 7px;
     width: 15.5vw !important;
@@ -313,7 +313,7 @@ h1, h2, h3, h4, h5, h6, p{
     border-radius: 2.5px;
 }
 
-#placeOrders button:hover{
+button:hover, input:hover{
     cursor: pointer;
 }
 
