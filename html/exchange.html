@@ -39,23 +39,25 @@
                     Choose Crypto
                 </button>
                 <div id="drop">
-                    <button onclick="dropdown()">BTC</button>
-                    <button onclick="dropdown()">ETH</button>
-                    <button onclick="dropdown()">LTC</button>
+                    <button onclick="dropdown1()">BTC</button>
+                    <button onclick="dropdown2()">ETH</button>
+                    <button onclick="dropdown3()">LTC</button>
                 </div>
                 <h2>Buy</h2>
-                <div id="sellForm">
-                    <form id="sell" action="POST">
+                <div id="buyForm">
+                    <div id="buy">
                         <input placeholder="Amount" type="text">
-                        <input value="Place Order" type="submit">
-                    </form>
+                        <input value="Place Order" onclick="buy()" type="submit">
+                    </div>
                 </div>
                 <h2>Sell</h2>
-                <div id="buyForm">
-                    <form id="buy" action="POST">
-                        <input placeholder="Amount" type="text">
-                        <input value="Place Order" type="submit">
-                    </form>
+                <div id="sellForm">
+                    <div id="sellForm">
+                        <div id="sell">
+                            <input placeholder="Amount" type="text">
+                            <input value="Place Order" onclick="sell()" type="submit">
+                        </div>
+                    </div>    
                 </div>
             </div>
         </div>
